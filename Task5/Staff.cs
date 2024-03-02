@@ -1,0 +1,33 @@
+﻿namespace Task5;
+
+public class Staff:Person
+{
+private string _school; 
+private double _pay; 
+
+public Staff(string name, string address,string school, double pay):base(name,address)
+{
+    _school=school; 
+    _pay=pay;
+} 
+public string GetSchool()
+{
+    return _school;
+} 
+public void SetSchool(string school)
+{
+    _school=school;
+} 
+public double GetPay()
+{
+    return _pay;
+} 
+public void Setpay(double pay)
+{
+    _pay=pay;
+}
+    public override string ToString()
+    {
+        return $"{base.ToString()} school: {_school} pay: {_pay}";
+    }
+}
